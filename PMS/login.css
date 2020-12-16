@@ -1,0 +1,61 @@
+/* css reset */
+body {
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+    margin: 0px;
+    padding: 50px 50px 50px 50px;
+    background: url('../img/login.png');
+    background-size: cover;
+    Text-align: center
+}
+
+.btn {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(99, 85, 85);
+}
+
+.container{ 
+    border: 2px solid black;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 40%; 
+    border-radius: 13px;
+    height: 40%;
+    width: 20%;
+}
+
+.form.group input {
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.container h1 {
+    text-align: center;
+    color: black;
+    /* border: 2px solid rgb(223, 230, 233); */
+}
+
+.container.button {
+    display: block;
+    width: 75%;
+    margin: 20px auto;
+}
