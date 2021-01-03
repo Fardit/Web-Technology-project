@@ -1,30 +1,52 @@
-<?php
+<?php 
+
+session_start();
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<div align="center">
-<h1>Welcome to Property Management System</h1>
-<br>
-<br>
-<a href="LoginPage/">
-<button style="width:200px;height:25px; background-color:white;">LOGIN</button>
-</a>
-<br>
-<br>
-<a href="RegistrationPages/">
-<button style="width:200px;height:25px;background-color:limegreen;">REGISTER</button>
-</a>
-
-
-</div>
-    
+<header class="header">
+            <!-- left box for logo -->
+            <div class="left">
+                <img src="property.png" alt="">
+                <div>pms</div>
+            </div>
+            <!-- mid box for navigation -->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a> </li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Poperty</a> </a></li>
+                    <li><a href="#">Contract US</a></li>
+                </ul>
+            </div>
+            
+            <!-- right box for buttons -->
+            <div class=right>
+                <?php 
+                    if(!isset($_SESSION['userid']))
+                    {
+                        echo "<a href=\"LoginPage/\"><button>Log In</button></a>";
+                        echo "<a href=\"RegistrationPages/\"><button>Sign up</button></a>";
+                    }
+                    else
+                    {
+                        echo "<a href=\"interface/\"><button>Profile</button></a>";
+                        echo "<a href=\"Logout/logout.php\"><button>Logout</button></a>";
+                        $_SESSION['logOutId']= 1;
+                    }
+                ?>
+            </div>
+  </header>  
+    <div class="container">
+        <h1>Welcome to Property Management System</h1>
+            
+     </div>
 </body>
 </html>

@@ -9,19 +9,6 @@ $Email = "";
 $Address = "";
 $ConfirmPassword = "";
 ?>
-<?php 
-
-if($_SERVER["REQUEST_METHOD"] == "POST")
-{
-	$insertquery = "INSERT INTO `admin` (`Id`, `Name`, `Phone`, `Email`, `Address`,`Password`) VALUES (NULL, '".$_POST['Admin_Name']."', '".$_POST['Phone']."','".$_POST['Email']."', '".$_POST['Address']."','".$_POST['Password']."');";
-
-	if($flag == 0){
-		mysqli_query($conn, $insertquery );
-
-
-	} 
-}
-?>
 
 <!DOCTYPE html>
 <html>
@@ -100,17 +87,36 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
 		<div class="mid">
             <ul class="navbar">
-                <li><a href="#" class="active">Home</a> </li>
+                <li><a href="../index.php" class="active">Home</a> </li>
                 <li><a href="#">About US</a></li>
-                <li><a href="#">Poperty</a> </a></li>
+                <li><a href="#">Poperty</a></li>
                 <li><a href="#">Contract US</a></li>
             </ul>
         </div>
-			<a href="login.php" target="_blank">
-            <div class="right">    
-                <button class="btn">Log In</button>
-            </div>
-            </a>
+			<?php 
+			
+			
+			if(!isset($_SESSION['userid']))
+			{
+
+				echo "<a href=\"../LoginPage/login.php\" target=\"_blank\">
+				<div class=\"right\">    
+					<button class=\"btn\">Log In</button>
+				</div>
+				</a>";
+			}
+			else
+			{
+				echo "<a href=\"../Logout/logout.php\">
+				<div class=\"right\">    
+					<button class=\"btn\">Log Out</button>
+				</div>
+				</a>";
+			}
+			
+			
+			
+			?>
 	</header>
 	<?php
 	  	$Admin_NameError = "";
@@ -260,7 +266,33 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	if($flag == 0){
 		mysqli_query($conn, $insertquery );
 
+		echo "<script>
+		
+		
+		
+		
+
+		if(confirm(\"Registration Sucessfull EMAIL:".$_POST['Email']."Password: ".$_POST['Password']." \"))
+		{
+			window.location.replace(\"../LoginPage/login.php\");
+		}
+		else
+		{
+			window.location.replace(\"../LoginPage/login.php\");
+		}
+		
+		
+		
+		
+		</script>";
+
+
+
+		
+
 
 	} 
 }
+
+
 ?>

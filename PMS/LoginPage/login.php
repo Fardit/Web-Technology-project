@@ -5,7 +5,7 @@ include "../includes/db_connect.inc.php";
 
 if(isset($_SESSION['userid']))
 {
-	header("location:../interface/");
+	header("location: ../interface/");
 	die();
 }
 
@@ -13,13 +13,15 @@ $user = $password = $loginError ="";
 $flag = 0;
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
+	
 	$flag = 0;
 	if(isset($_POST['loginBtn']))
 	{
+		
 		$user = htmlspecialchars($_POST["user"]);
 		$password = htmlspecialchars($_POST["password"]);
 		
-		if(empty($user)|| empty($password))
+		if(empty($user) || empty($password))
 		{
 			$loginError = "Please Enter Login Info";
 			$flag = 1;
@@ -38,15 +40,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 			}
 			if($flag==0)
 			{
-				
 				if($row=mysqli_fetch_assoc($result))
 				{
 					
 					if($password==$row['Password'])
 					{
 						$_SESSION['userid'] = $row['Id'];
-						header("location:../interface/");
-						
+						header("location: ../interface/");
+						echo "<script>alert(\"Login Succesfull\")</script>";
 
 
 					}
@@ -57,19 +58,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 					}
 				}
 
-
-
 			}
 			
 		}
-
 
 	}
 
 }
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -78,33 +75,33 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login</title>
 </head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap">
+<link rel="stylesheet" href="login.css">
 <body>
-<?php require "../includes/header.php"; ?>
+<div class="container">
 
-<div align="center">
-<h1>PMS LOGIN</h1>
-<br>
-<br>
+<a href="../index.php">Home</a>
+
+
+<h1>PLease Login Here</h1>
+
 <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 
-<label for="Id/Email">ID / EMAIL</label>
-<br>
-<input type="text" name="user" id="" required>
-<br>
-<br>
-<label for="Password">PASSWORD</label >
-<br>
-<input type="password" name="password" id="" required>
-<br>
-<br>
+<div class="form-group">
+<div><label for="Id/Email">ID / EMAIL :</label></div>
+</div>
+<input type="text" name="user" id = "user" required>
 
-<p style="color:red;"><?php echo $loginError; ?></p>
+<div class="form-group">
+<div><label for="Password">PASSWORD :</label></div>
+</div>
+<input type="password" name="password" id = "password" required>
 
-<input style="width:100px; height:25px;" type="submit" name="loginBtn" value="Log In">
+<p><?php echo $loginError; ?></p>
+
+<button class="btn" type="submit" name = "loginBtn" >log In</button>
 
 </form>
-
-</div>
-	
+</div>	
 </body>
 </html>
