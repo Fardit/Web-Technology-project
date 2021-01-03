@@ -1,0 +1,380 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+body{
+    font-size: 16px;
+    color:#333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+        padding: 20px 0;
+        background-color: #ffffff;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.logo a{
+    width: 20%;
+    float: left;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+
+.logo a:hover{
+    color: #2eca6a;
+}
+.logo a span{
+    color: #2eca6a;
+}
+
+nav{
+    width: 53%;
+    float: left;
+}
+nav ul{}
+nav ul li{
+    float: left;
+    display: inline-block;
+}
+nav ul li a{
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 10px 16px;
+    display: block;
+}
+nav ul li a:hover{
+    color: #2eca6a;
+}
+img{
+    max-width: 100%;
+}
+.social-list{
+    width: 20%;
+    float: left;
+}
+.social-list ul{}
+.social-list ul li{
+    float: left;
+}
+.social-list ul li a{
+    display: block;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 13px;
+}
+.social-list ul li a:hover{
+    color: #2eca6a;
+}
+.banner-section{
+    background-image: url(../images/slide-1.jpg);
+    background-color: #00000061;
+    min-height: 100vh;
+    background-blend-mode: color;
+}
+.banner-content{
+    width: 50%;
+    float: right;
+    margin-top: 15em;
+}
+.banner-content h1{
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 900;
+    color: #FFF;
+}
+.banner-content h1 span{
+    color: #2eca6a;
+}
+.banner-content h2{
+    font-size: 40px;
+    margin-top: 40px;
+    color: #2eca6a;
+}
+
+/*
+Latest Properties start
+=======================
+*/
+.latest-properties{
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: black;
+    margin-left: 165px;
+}
+/*
+Latest Properties end
+=======================
+*/
+
+
+/*
+Showcase section start
+=======================
+*/
+.showcaseh2{
+    margin-top: 35px;
+    margin-left: 81px;
+    color: #2dca6a;
+}
+.showcaseh3{
+    margin-top: 35px;
+    margin-left: 81px;
+    
+}
+
+.showcase-section{
+    background: #fff;
+    padding: 30px;
+
+}
+.showcase{
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+    padding: 15px;
+}
+
+.showcase-detail img{
+    width: 350px;
+
+}
+
+.showcase-detail:hover .overlay {
+    opacity: 1;
+    height: 100%;
+
+}
+
+
+.showcase-detail:hover .plus {
+    opacity: 1;
+    top: 50%;
+}
+
+/*
+Showcase section end
+=======================
+*/
+.properties{
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: black;
+    margin-left: 165px;
+    margin-top: -65px;
+    margin-bottom: 35px;
+
+}
+.propertiesh2{
+    color: #2eca6a;
+}
+.propertiesh3{
+    color: #2eca6a;
+    margin-bottom: 7px;
+}
+
+
+.about-us-section{
+    padding: 100px 0;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    /*width: 50%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;*/
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.col h1{
+    font-size: 3em;
+    line-height: 1.2;
+}
+.col img{
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 51px;
+}
+.col p{
+    font-size: 18px;
+}
+
+.courses-section{
+    background-color: #EDF2F5;
+    padding: 100px 0;
+}
+.course{
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+    padding: 15px;
+    box-sizing: border-box;
+    /* background-color: white; */
+}
+.course img{}
+.course .course-box{
+    background: white;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0 0 20px #9898986e;
+}
+.course .course-box:hover{
+    box-shadow: 0 0 0 #9898986e;
+}
+.course-box div{
+    padding: 20px;
+}
+.course-box div h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1;
+}
+.course-box div p{}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: #2eca6a;
+  color: white;
+  font-size: 17px;
+  border: 1px solid white;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #285423;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.footer-section{
+    background-color: #f3f3f3;
+    padding: 25px 0;
+}
+
+.footerp{
+    margin-left: 540px;
+    color: #555555;
+}
+.footerp1{
+    margin-left: 603px;
+    color: #555555;
+}
+.color-a{
+    color: black;
+
+}
+.color-b{
+    color:#2eca6a;
+}
+.color-a:hover{
+    color: #2eca6a;
+}
+.footerline{
+    margin-left: 160px;
+    margin-right:  160px;
+    margin-bottom:  17px;
+    border-top: 1px solid #dddd;
+}
+
+
+/*edit profile
+================
+*/
+.name{
+    width: 236px;
+    margin-left: 26px;
+}
+.phone{
+    width:234px; 
+    margin-left: 24px;
+}
+.email{
+    width: 235px;
+    margin-left: 10px;
+}
+.address{
+    width: 233px;
+    margin-left: 10px;
+}
+.editprofileh1{
+    margin-left: 59px;
+    color: #2eca6a;
+}
+.editprofilep{
+    margin-left: 80px;
+    color: white;
+}
+
+.edit-banner-section{
+    background-image: url(../images/slide-1.jpg);
+    background-color: #0000002e;
+    min-height: 100vh;
+    background-blend-mode: color;
+}
+.edit-banner-content{
+    width: 50%;
+    float: right;
+    margin-top: 2em;
+}
+
+.course .course-box-view{
+    background: white;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0 0 20px #2dca6a;
+}
+.course .course-box-view:hover{
+    box-shadow: 0 0 0 #2dca6a;
+}
+table, th, td{
+    border: 2px solid black;
+    width: 50px;
+    background-color: #2dca6a;
+}
