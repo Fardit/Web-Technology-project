@@ -1,0 +1,135 @@
+body {
+    font-family: 'Baloo Bhai', cursive;
+    /* color: white; */
+    margin: 0px;
+    padding: 0px;
+    background: url('homebgl.png');
+    background-size: cover;
+    text-align: center;
+    
+
+}
+.btn {
+
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 9px;
+    background-color:black;
+    color: rgb(235, 27, 12);
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    border: 2px solid yellow; 
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    }
+
+
+.btn1 {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: rgb(17, 204, 42);
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    top: 20px;
+    display: inline-block;
+    border: 2px solid yellow;
+    position: absolute;
+    right: 150px;
+}
+
+.btn1:hover {
+    background-color: rgb(99, 85, 85);
+}
+   .btn3 {
+
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 0px;
+        top: 520px;
+        background-color: black;
+        color: rgb(17, 204, 42);
+     padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.btn3:hover {
+    background-color: rgb(99, 85, 85);
+}
+.btn4 {
+    
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 0px;
+        top: 560px;
+        background-color: black;
+        color: rgb(17, 204, 42);
+     padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+
+.btn4:hover {
+    background-color: rgb(99, 85, 85);
+}
+.btn2 {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: green;
+    border: 2px solid yellow;
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    top: 20px;
+    display: inline-block;
+
+}
+
+.btn2:hover {
+    background-color: rgb(99, 85, 85);
+}
+.btn5 {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: rgb(17, 204, 42);
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    top: 20px;
+    display: inline-block;
+    border: 2px solid yellow;
+    position: absolute;
+    right: 20px;
+}
+
+.btn5:hover {
+    background-color: rgb(99, 85, 85);
+}
+.info{
+
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 2px;
+    border: 2px solid black;
+    margin: 80px auto;
+    font-size: 25px;
+    border-radius: 8px;
+    
+
+}
